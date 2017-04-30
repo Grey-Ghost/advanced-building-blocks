@@ -19,7 +19,7 @@ def bubble_sort_by to_sort
   loop do
     swapped = false
     for i in 1...to_sort.length do
-      if yield(to_sort[i], to_sort[i-1]) < 0
+      if yield(to_sort[i],to_sort[i-1]) < 0
         swap = to_sort[i-1]
         to_sort[i-1] = to_sort[i]
         to_sort[i] = swap
